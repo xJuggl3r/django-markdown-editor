@@ -4,3 +4,6 @@ requests
 bleach
 martor
 gunicorn
+python-decouple
+
+
