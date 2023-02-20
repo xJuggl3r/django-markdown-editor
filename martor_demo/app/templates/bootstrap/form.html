@@ -9,7 +9,8 @@
 {% endblock %}
 
 {% block content %}
-  <form class="form" method="post">{% csrf_token %}
+  <form class="form" method="post">
+    {% csrf_token %}
     <div class="form-group">
       {{ form.title }}
     </div>

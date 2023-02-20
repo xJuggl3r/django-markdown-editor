@@ -122,7 +122,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1:8020', 'http://localhost:8020']
+CSRF_TRUSTED_ORIGINS = [
+    'https://127.0.0.1:8020',
+    'http://localhost:8020',
+    'http://127.0.0.1:8010',
+    'http://127.0.0.1:8020'
+]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
